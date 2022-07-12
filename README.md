@@ -1,3 +1,2 @@
 # Crawler-Tempelate
-first install last version of python in your computer from here
-https://www.python.org/downloads/
+First install last version of python in your computer from <a href="https://www.python.org/downloads/">here</a>.
