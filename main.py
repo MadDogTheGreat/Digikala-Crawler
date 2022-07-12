@@ -40,8 +40,11 @@ def PLP():
             for productLink in productLinkList:
                 driver.get(productLink)
                 productSoup = BeautifulSoup(driver.page_source, 'html.parser')
-                resultJson["Products"].append(
-                    Crawler(index=productdigikalaUrl, soup=productSoup, productUrl=productLink))
+                try:
+                    resultJson["Products"].append(
+                        Crawler(index=productdigikalaUrl, soup=productSoup, productUrl=productLink))
+                except:
+                    pass
                 if(productdigikalaUrl % 10 == 0):
                     print(
                         colored(f"{productdigikalaUrl} pages Where Extracted ...", 'red'))
