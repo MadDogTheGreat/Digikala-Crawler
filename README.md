@@ -7,4 +7,7 @@ pip install -r requirements.txt
 ```
 <br></br>
 
-Then go to main and find `PDP()` and `PLP()`
+Then fill `urls.txt` or `plpUrls.json` with the data needed.<br></br>
+In `urls.txt` you should put pdp urls and run `PDP()` method.<br></br>
+In `plpUrls.json` you shoudl put plp urls and run `PLP()`<br></br>
+Then go to main and find `PDP()` and `PLP()` 
