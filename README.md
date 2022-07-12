@@ -6,3 +6,5 @@ Open Terminal in project foler and run this command:
 pip install -r requirements.txt 
 ```
 <br></br>
+
+Then go to main and find `PDP()` and `PLP()`
