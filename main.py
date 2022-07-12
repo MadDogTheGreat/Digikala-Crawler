@@ -6,7 +6,6 @@ from selenium import webdriver
 import uuid
 import pyfiglet
 
-
 # Gets data from plpUrls.json with start and end page.
 # It can be Category or certain brand or any other plp pages.
 def PLP():
