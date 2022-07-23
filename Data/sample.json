@@ -1,0 +1,62 @@
+{
+  "Products": [
+    {
+      "Id": "",
+      "Name": "",
+      "ProductUrl": "",
+      "MetaKeyWords": "",
+      "MetaDescription": "",
+      "Price": "",
+      "OldPrice": "",
+      "Gallery": [""],
+      "FullDescription": "",
+      "ShortDescription": "",
+      "Categories": [
+        {
+          "Name": "",
+          "Url": "",
+          "MetaDescription": "",
+          "MetaKeyWords": ""
+        },
+        {
+          "Name": "",
+          "Url": "",
+          "MetaDescription": "",
+          "MetaKeyWords": ""
+        }
+      ],
+      "Manufacturer": {
+        "Name": "",
+        "Url": "",
+        "ImageUrl": "",
+        "MetaDescription": "",
+        "MetaKeyWords": ""
+      },
+      "SpecificationAttributes": [
+        {
+          "ClassName": "",
+          "SpecificationList": [
+            {
+              "Title": "",
+              "Value": ""
+            }
+          ]
+        }
+      ],
+      "ProductAttributes": [
+        {
+          "Title": "",
+          "Value": ""
+        }
+      ],
+      "ProductTags": [
+        {
+          "Name": "",
+          "Url": "",
+          "MetaDescription": "",
+          "MetaKeyWords": ""
+        }
+      ]
+    }
+  ]
+}
