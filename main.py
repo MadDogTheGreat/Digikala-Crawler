@@ -8,6 +8,8 @@ import pyfiglet
 
 # Gets data from plpUrls.json with start and end page.
 # It can be Category or certain brand or any other plp pages.
+
+
 def PLP():
     driver = webdriver.Chrome("chromedriver.exe")
     f = open("plpUrls.json", 'r')
@@ -38,6 +40,18 @@ def PLP():
                 x for x in productLinkList if "click" not in x]
             for productLink in productLinkList:
                 driver.get(productLink)
+                specificationClick = driver.find_element_by_xpath(
+                    "//*[@id='specification']/span")
+                driver.execute_script(
+                    "arguments[0].click();", specificationClick)
+                PdpShortReviewClick = driver.find_element_by_xpath(
+                    "//*[@id='PdpShortReview']/div[3]/span/span/span")
+                driver.execute_script(
+                    "arguments[0].click();", PdpShortReviewClick)
+                expertReviewClick = driver.find_element_by_xpath(
+                    "//*[@id='expertReview']/span")
+                driver.execute_script(
+                    "arguments[0].click();", expertReviewClick)
                 productSoup = BeautifulSoup(driver.page_source, 'html.parser')
                 try:
                     resultJson["Products"].append(
@@ -65,6 +79,15 @@ def PDP():
     driver = webdriver.Chrome("chromedriver.exe")
     for url in urllist:
         driver.get(url)
+        specificationClick = driver.find_element_by_xpath(
+            "//*[@id='specification']/span")
+        driver.execute_script("arguments[0].click();", specificationClick)
+        PdpShortReviewClick = driver.find_element_by_xpath(
+            "//*[@id='PdpShortReview']/div[3]/span/span/span")
+        driver.execute_script("arguments[0].click();", PdpShortReviewClick)
+        expertReviewClick = driver.find_element_by_xpath(
+            "//*[@id='expertReview']/span")
+        driver.execute_script("arguments[0].click();", expertReviewClick)
         productSoup = BeautifulSoup(driver.page_source, 'html.parser')
         resultJson["Products"].append(Crawler(url, productSoup, url))
 
